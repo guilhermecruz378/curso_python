@@ -1,0 +1,1 @@
+print(formato.format(nome, idade))
