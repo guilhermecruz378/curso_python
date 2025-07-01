@@ -1,7 +1,7 @@
-palavra_secreta = 's'
+palavra_secreta = 'cavaleiro'
 print('-- VAMOS JOGAR O JOGO DA ADIVINHAÇÃO -----')
 while True:
-    print('A dica é... Apenas uma letra minuscula.')
+    print('A dica é... Época medieval.')
     digit = input('Digite a palavra secreta: ')
     converge = None
 
@@ -18,6 +18,7 @@ while True:
 
     tamanho_digit = len(digit_str)
     tamanho_secret = len(palavra_secreta)
+
     if tamanho_digit > tamanho_secret:
         print('O tamanho de sua palavra está errado, tente uma palavra é MENOR!')
         continue
@@ -29,6 +30,6 @@ while True:
         print('Você errou tente mais uma vez!')
         continue
 
-    if digit == 's':
-        print(f'\033;32;40[mA letra correta é "{palavra_secreta}" Você acertou!\033[m')
+    if digit == palavra_secreta:
+        print('A letra correta é "{palavra_secreta}" Você acertou!')
         break
