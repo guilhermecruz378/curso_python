@@ -18,7 +18,7 @@ salas = [
 
 # print('maria', 'Helena', 1, 2, 3, 'Eduarda')
 # print(*lista)
-# print(*string)
+print(*string)
 # print(*tupla)
 
 print(*salas, end='\n')
