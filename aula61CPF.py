@@ -20,7 +20,24 @@
 # else:
 #     print('Erro')
 
-cpf_enviado_pelo_usuario = '74682489070'
+# cpf_enviado_pelo_usuario = '746.824.890-70' .replace('.','') \
+#     .replace('-','')
+import re
+import sys
+
+entrada = input('CPF[746.824.890-70]:')
+cpf_enviado_pelo_usuario = re.sub(
+    r'[^0-9]',
+    '',
+    entrada
+)
+
+entrada_sequencial = entrada == entrada[0] * len(entrada)
+
+if entrada_sequencial:
+    print('Você enviou dados sequenciais.')
+    sys.exit()
+
 nove_digitos = cpf_enviado_pelo_usuario[:9]
 contador_regressivo_1 = 10
 
