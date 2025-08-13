@@ -26,4 +26,4 @@ def escopo():
 
 print(x)
 escopo()
-print(x)
+#print(x)
