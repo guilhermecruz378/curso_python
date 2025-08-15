@@ -10,10 +10,17 @@ print(multi_desempacotado)
 
 print('-='*20)
 
+# def par_ou_impar(x):
+#     if x % 2 == 0:
+#         return f"{x} é par!"
+#     else:
+#         return f"{x} é impar!"
+
 def par_ou_impar(x):
-    if x % 2 == 0:
+    multiplo_de_dois = x % 2 == 0
+
+    if multiplo_de_dois:
         return f"{x} é par!"
-    else:
-        return f"{x} é impar!"
+    return f"{x} é impar!"
 
 print(par_ou_impar(98))
